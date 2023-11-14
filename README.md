@@ -66,7 +66,7 @@ plt.axis("off")
 plt.show()
 ```
 ## Exp:2 Implementation of Bayesian classifier:
-```
+```py
 import numpy as np
 from sklearn.datasets import load_iris 
 from sklearn.model_selection import train_test_split
@@ -88,7 +88,7 @@ accuracy = accuracy_score(y_test, y_pred)
 print("Accuracy: ",accuracy)
 ```
 ## Exp:3 Implementation of Exact inference method by Bayes Network:
-```
+```py
 from pgmpy.models import BayesianNetwork
 from pgmpy.factors.discrete import TabularCPD
 from pgmpy.inference import VariableElimination
@@ -111,7 +111,7 @@ result=inference.query(variables=[query_variable],evidence=evidence)
 print(result)
 ```
 ### Exp:4 Implementation of Approximate Inference in Bayesian Networks:
-```
+```py
 # Import the necessary libraries
 
 from pgmpy.models import BayesianNetwork
@@ -195,7 +195,7 @@ print('\n Approximate probabilities of {}:'.format(query_variable))
 print(query_result)
 ```
 ## Exp:5 Implementation of Hidden Markov Model:
-```
+```py
 import numpy as np
 transition_matrix = np.array([[0.7,0.3],
                               [0.4,0.6]])
@@ -219,7 +219,7 @@ for t in range(len(observed_sequence)):
 print("The most likely sequence of weather states is:",most_likely_sequence)
 ```
 ## Exp:6 Implementation of Kalman Filter:
-```
+```py
 import numpy as np
 
 class KalmanFilter:
@@ -271,7 +271,7 @@ plt.legend
 plt.show()
 ```
 ## Exp:7 Implementation of speech recognition:
-```
+```py
 import speech_recognition as sr
 
 # Assign a string variable "file" with the name of the audio file that you want to transcribe.
@@ -297,7 +297,7 @@ for line in text.splitlines():
     print(line)
 ```
 ## Exp:8 Implementation of sematic analysis:
-```
+```py
 import nltk
 from nltk.corpus import wordnet
 
